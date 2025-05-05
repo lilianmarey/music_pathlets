@@ -16,7 +16,7 @@ This work improves our understanding of users' interactions with music and opens
 A dataset of 2000 user histories tagged by genre over 17 months, supplied by a leading music streaming company, is also released with the code. 
 
 
-## Datasets
+## Dataset
 
 https://zenodo.org/records/15341401
 
