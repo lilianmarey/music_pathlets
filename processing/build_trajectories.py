@@ -9,23 +9,23 @@ from globals import *
 
 ########################################################################
 
-X = import_pickle(f"{XXXX_processed_path}X.pkl")
+X = import_pickle(f"{DEEZER_processed_path}X.pkl")
 
-h_co_listening = import_pickle(f"{XXXX_processed_path}h_co_listening.pkl")
+h_co_listening = import_pickle(f"{DEEZER_processed_path}h_co_listening.pkl")
 
-all_tags = import_pickle(f"{XXXX_processed_path}all_tags.pkl")
+all_tags = import_pickle(f"{DEEZER_processed_path}all_tags.pkl")
 
 train_appearance_candidates = import_pickle(
-    f"{XXXX_processed_path}appearance_candidates_train.pkl"
+    f"{DEEZER_processed_path}appearance_candidates_train.pkl"
 )
 train_disappearance_candidates = import_pickle(
-    f"{XXXX_processed_path}disappearance_candidates_train.pkl"
+    f"{DEEZER_processed_path}disappearance_candidates_train.pkl"
 )
 test_appearance_candidates = import_pickle(
-    f"{XXXX_processed_path}appearance_candidates_test.pkl"
+    f"{DEEZER_processed_path}appearance_candidates_test.pkl"
 )
 test_disappearance_candidates = import_pickle(
-    f"{XXXX_processed_path}disappearance_candidates_test.pkl"
+    f"{DEEZER_processed_path}disappearance_candidates_test.pkl"
 )
 
 ########################################################################
@@ -38,7 +38,7 @@ train_appearance_trajectories = sample_trajectories(
     h_co_listening=h_co_listening,
     candidate_dict=train_appearance_candidates,
     n_traj_per_candidate=n_traj_per_candidate,
-    max_period=XXXX_K - 2,
+    max_period=DEEZER_K - 2,
 )
 
 train_disappearance_trajectories = sample_trajectories(
@@ -47,7 +47,7 @@ train_disappearance_trajectories = sample_trajectories(
     h_co_listening=h_co_listening,
     candidate_dict=train_disappearance_candidates,
     n_traj_per_candidate=n_traj_per_candidate,
-    max_period=XXXX_K - 2,
+    max_period=DEEZER_K - 2,
 )
 
 test_appearance_trajectories = sample_trajectories(
@@ -56,7 +56,7 @@ test_appearance_trajectories = sample_trajectories(
     h_co_listening=h_co_listening,
     candidate_dict=test_appearance_candidates,
     n_traj_per_candidate=n_traj_per_candidate,
-    max_period=XXXX_K - 1,
+    max_period=DEEZER_K - 1,
 )
 
 test_disappearance_trajectories = sample_trajectories(
@@ -65,25 +65,25 @@ test_disappearance_trajectories = sample_trajectories(
     h_co_listening=h_co_listening,
     candidate_dict=test_disappearance_candidates,
     n_traj_per_candidate=n_traj_per_candidate,
-    max_period=XXXX_K - 1,
+    max_period=DEEZER_K - 1,
 )
 
 ###################################################################################
 
 save_pickle(
-    f"{XXXX_processed_path}appearance_trajectories_train.pkl",
+    f"{DEEZER_processed_path}appearance_trajectories_train.pkl",
     train_appearance_trajectories,
 )
 save_pickle(
-    f"{XXXX_processed_path}disappearance_trajectories_train.pkl",
+    f"{DEEZER_processed_path}disappearance_trajectories_train.pkl",
     train_disappearance_trajectories,
 )
 
 save_pickle(
-    f"{XXXX_processed_path}appearance_trajectories_test.pkl",
+    f"{DEEZER_processed_path}appearance_trajectories_test.pkl",
     test_appearance_trajectories,
 )
 save_pickle(
-    f"{XXXX_processed_path}disappearance_trajectories_test.pkl",
+    f"{DEEZER_processed_path}disappearance_trajectories_test.pkl",
     test_disappearance_trajectories,
 )
