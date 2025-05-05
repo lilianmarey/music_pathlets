@@ -10,10 +10,10 @@ from globals import *
 
 ########################################################################
 
-df = pd.read_csv(f"{XXXX_processed_path}cut_histories.pkl")
-X = import_pickle(f"{XXXX_processed_path}X.pkl")
-all_users = import_pickle(f"{XXXX_processed_path}all_users.pkl")
-all_tags = import_pickle(f"{XXXX_processed_path}all_tags.pkl")
+df = pd.read_csv(f"{DEEZER_processed_path}cut_histories.pkl")
+X = import_pickle(f"{DEEZER_processed_path}X.pkl")
+all_users = import_pickle(f"{DEEZER_processed_path}all_users.pkl")
+all_tags = import_pickle(f"{DEEZER_processed_path}all_tags.pkl")
 
 ########################################################################
 
@@ -23,12 +23,12 @@ for user_id in tqdm(all_users):
     df_user = df[df["user_id"] == user_id]
     user_listening_list = [tuple(i) for i in df_user[["ts", "tag"]].to_numpy()]
 
-    for t in range(XXXX_K):
+    for t in range(DEEZER_K):
         t_user_listening_list = [
             stream[1]
             for stream in user_listening_list
-            if stream[0] >= XXXX_time_periods[t][0]
-            and stream[0] < XXXX_time_periods[t][1]
+            if stream[0] >= DEEZER_time_periods[t][0]
+            and stream[0] < DEEZER_time_periods[t][1]
         ]
         if len(t_user_listening_list) > 1:
             increment_or_add(
@@ -61,4 +61,4 @@ for user_id in tqdm(all_users):
 
 ########################################################################
 
-save_pickle(f"{XXXX_processed_path}h_co_listening.pkl", h_co_listening)
+save_pickle(f"{DEEZER_processed_path}h_co_listening.pkl", h_co_listening)
