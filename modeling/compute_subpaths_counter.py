@@ -9,14 +9,14 @@ from globals import *
 
 ########################################################################
 
-all_users = import_pickle(f"{XXXX_processed_path}all_users.pkl")
+all_users = import_pickle(f"{DEEZER_processed_path}all_users.pkl")
 appearance_trajectories = import_pickle(
-    f"{XXXX_processed_path}appearance_trajectories_train.pkl"
+    f"{DEEZER_processed_path}appearance_trajectories_train.pkl"
 )
 disappearance_trajectories = import_pickle(
-    f"{XXXX_processed_path}disappearance_trajectories_train.pkl"
+    f"{DEEZER_processed_path}disappearance_trajectories_train.pkl"
 )
-users_tag_ranking = import_pickle(f"{XXXX_processed_path}users_tag_ranking.pkl")
+users_tag_ranking = import_pickle(f"{DEEZER_processed_path}users_tag_ranking.pkl")
 
 ########################################################################
 
@@ -51,10 +51,10 @@ disappearance_counter = pool_process_candidates(
 ########################################################################
 
 save_pickle(
-    f"{XXXX_processed_path}appearance_subpaths_counter.pkl",
+    f"{DEEZER_processed_path}appearance_subpaths_counter.pkl",
     appearance_counter,
 )
 save_pickle(
-    f"{XXXX_processed_path}disappearance_subpaths_counter.pkl",
+    f"{DEEZER_processed_path}disappearance_subpaths_counter.pkl",
     disappearance_counter,
 )
