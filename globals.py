@@ -4,7 +4,7 @@ Defines time periods for a dataset along with relevant configuration parameters.
 
 from processing.helpers import datetime_to_timestamp
 
-XXXX_time_periods = dict(
+DEEZER_time_periods = dict(
     [
         (0, (datetime_to_timestamp(1, 1, 2022), datetime_to_timestamp(1, 2, 2022))),
         (1, (datetime_to_timestamp(1, 2, 2022), datetime_to_timestamp(1, 3, 2022))),
@@ -26,7 +26,7 @@ XXXX_time_periods = dict(
     ]
 )
 
-XXXX_K = max(XXXX_time_periods.keys())
-XXXX_stream_threshold = 15
-XXXX_processed_path = "processed_data/XXXX/"
-XXXX_results_path = "results/XXXX/"
+DEEZER_K = max(DEEZER_time_periods.keys())
+DEEZER_stream_threshold = 15
+DEEZER_processed_path = "processed_data/DEEZER/"
+DEEZER_results_path = "results/DEEZER/"
