@@ -16,7 +16,7 @@ class Popularity:
         self.tag_pop_dict = dict([(tag, 0) for tag in self.all_tags])
 
         for key, val in tqdm(list(X.items())):
-            if key[1] != XXXX_K - 1:
+            if key[1] != DEEZER_K - 1:
                 self.tag_pop_dict[key[2]] += val
 
     def predict(self, user):
