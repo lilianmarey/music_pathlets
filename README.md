@@ -10,7 +10,7 @@ This repository provides Python code to reproduce experiments from the paper _"M
 The increasing availability of user data on music streaming platforms opens up new possibilities for analyzing music consumption. 
 However, understanding the evolution of user preferences remains a complex challenge, particularly as their musical tastes change over time.
 This paper uses the dictionary learning paradigm to model user trajectories across different musical genres. 
-We define a new framework that captures recurring patterns in genre trajectories, called \textit{pathlets}, enabling the creation of comprehensible trajectory embeddings. 
+We define a new framework that captures recurring patterns in genre trajectories, called pathlets, enabling the creation of comprehensible trajectory embeddings. 
 We show that pathlet learning reveals relevant listening patterns that can be analyzed both qualitatively and quantitatively. 
 This work improves our understanding of users' interactions with music and opens up avenues of research into user behavior and fostering diversity in recommender systems.
 A dataset of 2000 user histories tagged by genre over 17 months, supplied by a leading music streaming company, is also released with the code. 
