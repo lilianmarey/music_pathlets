@@ -9,19 +9,19 @@ from globals import *
 
 ########################################################################
 
-all_users = import_pickle(f"{XXXX_processed_path}all_users.pkl")
-users_tag_ranking = import_pickle(f"{XXXX_processed_path}users_tag_ranking.pkl")
+all_users = import_pickle(f"{DEEZER_processed_path}all_users.pkl")
+users_tag_ranking = import_pickle(f"{DEEZER_processed_path}users_tag_ranking.pkl")
 appearance_trajectories = import_pickle(
-    f"{XXXX_processed_path}appearance_trajectories_train.pkl"
+    f"{DEEZER_processed_path}appearance_trajectories_train.pkl"
 )
 disappearance_trajectories = import_pickle(
-    f"{XXXX_processed_path}disappearance_trajectories_train.pkl"
+    f"{DEEZER_processed_path}disappearance_trajectories_train.pkl"
 )
 appearance_sub_paths_counter = import_pickle(
-    f"{XXXX_processed_path}appearance_subpaths_counter.pkl"
+    f"{DEEZER_processed_path}appearance_subpaths_counter.pkl"
 )
 disappearance_sub_paths_counter = import_pickle(
-    f"{XXXX_processed_path}disappearance_subpaths_counter.pkl"
+    f"{DEEZER_processed_path}disappearance_subpaths_counter.pkl"
 )
 
 ###################################################################
@@ -57,5 +57,5 @@ disappearance_D = compute_dictionary(
 
 ###################################################################
 
-save_pickle(f"{XXXX_processed_path}D_appearance.pkl", appearance_D)
-save_pickle(f"{XXXX_processed_path}D_disappearance.pkl", disappearance_D)
+save_pickle(f"{DEEZER_processed_path}D_appearance.pkl", appearance_D)
+save_pickle(f"{DEEZER_processed_path}D_disappearance.pkl", disappearance_D)
