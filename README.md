@@ -1,7 +1,7 @@
 # Modeling Musical Genre Trajectories through Pathlet Learning 
 
 
-This repository provides Python code to reproduce experiments from the paper _"Modeling Musical Genre Trajectories through Pathlet Learning"_, accepted in the Proceedings of the Explainable User Models and Personalized Systems (ExUM) International Workshop on Transparent Personalization Methods based on Heterogeneous Personal Data, at The 33rd ACM Conference on User Modeling, Adaptation and Personalization (UMAP ’25), June 16th—19th 2025,New York, USA
+This repository provides Python code to reproduce experiments from the paper _"Modeling Musical Genre Trajectories through Pathlet Learning"_, accepted at the Proceedings of the Explainable User Models and Personalized Systems (ExUM) International Workshop on Transparent Personalization Methods based on Heterogeneous Personal Data, at The 33rd ACM Conference on User Modeling, Adaptation and Personalization (UMAP ’25), June 16th—19th 2025,New York, USA
 
 
 
@@ -18,7 +18,7 @@ A dataset of 2000 user histories tagged by genre over 17 months, supplied by a l
 
 ## Datasets
 
-Dataset will be released after publication. 
+https://zenodo.org/records/15341401
 
 ## Environment
 ```
@@ -35,9 +35,9 @@ tqdm==4.66.5
 The repository must contain those folders (XXXX refering to a specific dataset):  
 ```
 ├── data
-│   └── XXXX/histories.csv
-├── processed_data/XXXX/
-└── results/XXXX/
+│   └── DEEZER/histories.csv
+├── processed_data/DEEZER/
+└── results/DEEZER/
 ```
 
 Processing and modeling dataset, evaluation :
