@@ -32,7 +32,7 @@ tqdm==4.66.5
 
 ## Running the code
 
-The repository must contain those folders (DEEZER refering to a specific dataset):  
+The repository must contain those folders (DEEZER being replacable by another dataset):  
 ```
 ├── data
 │   └── DEEZER/histories.csv
